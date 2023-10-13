@@ -1,38 +1,77 @@
-.App {
+/* TaskList.css */
+
+.task-list {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-task {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input-edit {
+  width: 60%;
+  padding: 5px;
+}
+
+.btn-save,
+.btn-edit,
+.btn-delete {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btnadd {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
   color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.btnadd:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ul-list {
+  flex: 1;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  background-color: #0056b3;
 }
